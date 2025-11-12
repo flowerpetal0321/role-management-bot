@@ -2,8 +2,8 @@ import { SlashCommandBuilder, ChatInputCommandInteraction, InteractionContextTyp
 
 export const data = 
     new SlashCommandBuilder()
-		.setName("help")
-		.setDescription("Information about this bot")
+		.setName('viewsettings')
+		.setDescription('See all role management settings')
         .setContexts(InteractionContextType.Guild);
 export async function execute(interaction:ChatInputCommandInteraction) {
     await interaction.reply("Not implemented.");
